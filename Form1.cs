@@ -16,5 +16,24 @@ namespace Découverte_C__et_Socket
         {
             InitializeComponent();
         }
+
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            // Lecture des contneus des textboxes Titre et Message
+            DataGridViewRow row = (DataGridViewRow) dgvListeMessages.RowTemplate.Clone();
+
+            // Création de nouvelles cellules dans la DataGridView dgvListeMessages
+            row.CreateCells(dgvListeMessages, txtTitle.Text, txtMessage.Text);
+
+            // Et ajout dans la DGV
+            dgvListeMessages.Rows.Add(row);
+
+        }
+
+        private void btnPurge_Click(object sender, EventArgs e)
+        {
+            dgvListeMessages.Rows.Clear();
+        }
     }
 }
