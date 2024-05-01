@@ -43,10 +43,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(36, 322);
+            this.btnSave.Location = new System.Drawing.Point(27, 221);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(168, 23);
             this.btnSave.TabIndex = 0;
@@ -63,14 +60,14 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(89, 113);
+            this.txtTitle.Location = new System.Drawing.Point(80, 12);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(132, 20);
             this.txtTitle.TabIndex = 2;
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(89, 150);
+            this.txtMessage.Location = new System.Drawing.Point(80, 49);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(132, 144);
@@ -79,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 116);
+            this.label2.Location = new System.Drawing.Point(24, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 4;
@@ -89,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 150);
+            this.label3.Location = new System.Drawing.Point(24, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 5;
@@ -103,7 +100,7 @@
             this.dgvListeMessages.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Titre,
             this.Message});
-            this.dgvListeMessages.Location = new System.Drawing.Point(228, 113);
+            this.dgvListeMessages.Location = new System.Drawing.Point(219, 12);
             this.dgvListeMessages.Name = "dgvListeMessages";
             this.dgvListeMessages.ReadOnly = true;
             this.dgvListeMessages.Size = new System.Drawing.Size(240, 181);
@@ -125,7 +122,7 @@
             // 
             // btnPurge
             // 
-            this.btnPurge.Location = new System.Drawing.Point(300, 322);
+            this.btnPurge.Location = new System.Drawing.Point(291, 221);
             this.btnPurge.Name = "btnPurge";
             this.btnPurge.Size = new System.Drawing.Size(168, 23);
             this.btnPurge.TabIndex = 7;
@@ -138,18 +135,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(480, 457);
+            this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.btnPurge);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvListeMessages);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSave);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Découverte de C#";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeMessages)).EndInit();
             this.ResumeLayout(false);

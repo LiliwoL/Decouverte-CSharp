@@ -20,19 +20,20 @@ namespace Découverte_C__et_Socket
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Lecture des contneus des textboxes Titre et Message
-            DataGridViewRow row = (DataGridViewRow) dgvListeMessages.RowTemplate.Clone();
+            // Création d'une nouvelle ligne de DataGridView vide
+            var row = new DataGridViewRow();
 
-            // Création de nouvelles cellules dans la DataGridView dgvListeMessages
+            // Ajout de nouvelles cellules dans la ligne crée ci dessus
+            // en utilisant le contenu des textbox Title et Message
             row.CreateCells(dgvListeMessages, txtTitle.Text, txtMessage.Text);
 
-            // Et ajout dans la DGV
+            // Et ajout de la ligne dans le DataGridView
             dgvListeMessages.Rows.Add(row);
-
         }
 
         private void btnPurge_Click(object sender, EventArgs e)
         {
+            // Vidage de toutes les lignes du DataGridView
             dgvListeMessages.Rows.Clear();
         }
     }
