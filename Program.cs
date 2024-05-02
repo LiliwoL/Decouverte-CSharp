@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Découverte_C__et_Socket
+namespace Découverte_C_Sharp
 {
     internal static class Program
     {

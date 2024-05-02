@@ -1,4 +1,4 @@
-﻿namespace Découverte_C__et_Socket
+﻿namespace Découverte_C_Sharp
 {
     partial class Form1
     {
